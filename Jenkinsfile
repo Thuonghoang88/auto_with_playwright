@@ -6,7 +6,7 @@ pipeline {
         sh '''
           export PATH="/usr/local/bin/npm:/usr/local/bin/node:/usr/local/bin:$PATH"
           npm install
-          npm init playwright@latest
+          npm run testCase
         '''
       }
     }
