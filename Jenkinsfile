@@ -9,20 +9,7 @@ pipeline {
           npm run testCase
         '''
       }
-    }
-    stage('help') {
-      steps {
-        sh 'npx playwright test --help'
-      }
-    }
-    stage('test') {
-      steps {
-        sh '''
-          npx playwright test --list
-          npx playwright test
-        '''
-      }
-      post {
+       post {
         success {
           archiveArtifacts(artifacts: 'homepage-*.png', followSymlinks: false)
           sh 'rm -rf *.png'
