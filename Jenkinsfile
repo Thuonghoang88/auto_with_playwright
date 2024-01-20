@@ -10,7 +10,7 @@ pipeline {
       }
       post { 
         always { 
-          publishHTML([ allowMissing: false,  alwaysLinkToLastBuild: true,  keepAll: true,  reportDir: 'playwright-report',  reportFiles: 'index.html',  reportName: 'orbit_ops_result_test',  reportTitles: ''])
+          publishHTML([ allowMissing: false,  alwaysLinkToLastBuild: true,  keepAll: true,  reportDir: 'playwright-report',  reportFiles: 'index.html',  reportName: 'test report',  reportTitles: ''])
         } 
       }
     
