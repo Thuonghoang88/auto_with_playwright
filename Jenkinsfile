@@ -10,7 +10,8 @@ pipeline {
     }
     stage('help') {
       steps {
-        sh 'npx playwright test --help'
+        npm i -D @playwright/test
+        npx playwright install
       }
     }
     stage('test') {
