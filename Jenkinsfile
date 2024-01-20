@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''
           export PATH="/usr/local/bin/npm:/usr/local/bin/node:/usr/local/bin:$PATH"
-          npm run testCase
+          npx playwright test jenkins-homepage.spec.ts
         '''
       }
     
