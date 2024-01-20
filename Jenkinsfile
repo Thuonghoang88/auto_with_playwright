@@ -4,6 +4,7 @@ pipeline {
     stage('install playwright') {
       steps {
         sh '''
+          export PATH="/usr/local/bin/npm:/usr/local/bin/node:/usr/local/bin:$PATH"
           npm i -D @playwright/test
           npx playwright install
         '''
