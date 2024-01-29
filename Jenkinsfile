@@ -12,7 +12,7 @@ pipeline {
       }
       post { 
         always { 
-          publishHTML([ allowMissing: false,  alwaysLinkToLastBuild: true,  keepAll: true,  reportDir: 'allure-report',  reportFiles: 'index.html',  reportName: 'test report',  reportTitles: ''])
+          publishHTML([ allowMissing: false,  alwaysLinkToLastBuild: true,  keepAll: true,  reportDir: 'allure-playwright',  reportFiles: 'index.html',  reportName: 'test report',  reportTitles: ''])
         } 
       }
     
