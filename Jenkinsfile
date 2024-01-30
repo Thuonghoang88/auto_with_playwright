@@ -7,7 +7,6 @@ pipeline {
           export PATH="/usr/local/bin/npm:/usr/local/bin/node:/usr/local/bin:$PATH"
           npm i -D @playwright/test allure-playwright --force
           npm run testCase
-          npx allure serve allure-results
         '''
       }
       post { 
